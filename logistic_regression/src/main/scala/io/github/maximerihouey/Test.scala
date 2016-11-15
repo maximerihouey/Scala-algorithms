@@ -39,7 +39,7 @@ object Test {
     val accuracy2 = (y_data_int zip predictions2).map(row => if(row._1 == row._2) 1.0 else 0.0).sum / predictions2.length
     println("\nAccuracy Logistique: %f | Count: %d\n".format(accuracy2, predictions2.length))
 
-    println(">>>> Coeficients >>>>")
+    println(">>>> Coefficients >>>>")
     println("> %f".format(logit.intercept))
     for(i <- 0 to logit.coefficients.length-1){
       println("> %f".format(logit.coefficients(i)))
