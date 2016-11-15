@@ -1,3 +1,0 @@
-sbt clean package
-
-$SPARK_HOME/bin/spark-submit --class "io.github.maximerihouey.Test" target/scala-2.11/logistic_regression_scala_2.11-1.0.jar 
